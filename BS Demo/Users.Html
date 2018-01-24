@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="/images/favicon.ico" />
+    <title>Users</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!--<script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>-->
+
+    <style>
+
+        @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="width80"] {
+        width: 80%;
+    }
+    [class*="width20"] {
+        width: 20%;
+    }
+        }
+        .cntr .row:not(.bg-info):hover{background-color:rgba(0,0,0,.075)!important;}
+        
+        .cntr .row:not(.bg-info) div{border-bottom: 2px solid #e9ecef;}
+
+        .cntr .row div{padding:.5rem .5rem!important}
+        .hlabel:hover{cursor:pointer;}
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="cntr tab">
+        <div class="row bg-info">   
+            <div class="col-md-1 col-sm-3 hidden-sm-down hidden-xs-down"><b class="hlabel">#</b>&nbsp;&nbsp;<i class="fa fa-sort" aria-hidden="true"></i></div>
+            <div class="col-md-3 col-xs-6 col-sm-4 width80"><b class="hlabel"><span class="hidden-xs-down">Applicant</span> Name</b>&nbsp;&nbsp;<i class="fa fa-sort" aria-hidden="true"></i></div>
+            <div class="col-md-2 col-sm-3 hidden-xs-down"><b class="hlabel">App. Number</b>&nbsp;&nbsp;<i class="fa fa-sort" aria-hidden="true"></i></div>
+            <div class="col-md-3 hidden-sm-down hidden-xs-down"><b class="hlabel">Email ID</b>&nbsp;&nbsp;<i class="fa fa-sort" aria-hidden="true"></i></div>
+            <div class="col-md-2 col-sm-3 hidden-xs-down"><b class="hlabel">Status</b>&nbsp;&nbsp;<i class="fa fa-sort" aria-hidden="true"></i></div>
+            <div class="col-md-1 col-sm-2 col-xs-6 width20"></div>
+        </div>
+        <div class="row bg-info">
+            <div class="col-md-1 col-sm-3 hidden-sm-down hidden-xs-down"></div>
+            <div class="col-md-3 col-xs-6 col-sm-4 width80"><input type="text" style="width:60%" placeholder="name.." class="form-control form-control-sm"></div>
+            <div class="col-md-2 col-sm-3 hidden-xs-down"><input type="text" style="width:60%" placeholder="number.." class="form-control form-control-sm"></div>
+            <div class="col-md-3 hidden-sm-down hidden-xs-down"><input type="text" style="width:60%" placeholder="email.." class="form-control form-control-sm"></div>
+            <div class="col-md-2 col-sm-3 hidden-xs-down"><select type="text" style="width:60%" placeholder="status.." class="form-control form-control-sm"><option>--select--</option><option>Active</option><option>In Active</option><option>Pending Documents</option><option>In Progress</option><option>Expired</option></select></div>
+            <div class="col-md-1 col-sm-2 col-xs-6 width20"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 col-sm-3 hidden-sm-down hidden-xs-down">1</div>
+            <div class="col-md-3 col-xs-6 col-sm-4 width80">Mr. Peter Busby</div>
+            <div class="col-md-2 col-sm-3 hidden-xs-down text-align-center">SC00076</div>
+            <div class="col-md-3 hidden-sm-down hidden-xs-down">peterbusby@gmail.com</div>
+            <div class="col-md-2 col-sm-3 hidden-xs-down">Active</div>
+            <div class="col-md-1 col-sm-2 col-xs-6 width20"><a title="update info" href="UsersInfo.html" class="alert-link"><span class="hidden-xs-down">Edit</span><span  class="hidden-sm-up"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></a></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 col-sm-3 hidden-sm-down hidden-xs-down">2</div>
+            <div class="col-md-3 col-xs-6 col-sm-4 width80">Mr. Sam Sampson</div>
+            <div class="col-md-2 col-sm-3 hidden-xs-down text-align-center">SC00077</div>
+            <div class="col-md-3 hidden-sm-down hidden-xs-down">samsampson@outlook.com</div>
+            <div class="col-md-2 col-sm-3 hidden-xs-down">In Progress</div>
+            <div class="col-md-1 col-sm-2 col-xs-6 width20"><a title="update info" href="UsersInfo.html" class="alert-link"><span class="hidden-xs-down">Edit</span><span  class="hidden-sm-up"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></a></div>
+        </div>
+        <div class="row">
+            <div  class="col-md-1 col-sm-3 hidden-sm-down hidden-xs-down">3</div>
+            <div class="col-md-3 col-xs-6 col-sm-4 width80">Mr. Jack Rabbit</div>
+            <div class="col-md-2 col-sm-3 hidden-xs-down text-align-center">SC00078</div>
+            <div class="col-md-3 hidden-sm-down hidden-xs-down">jackrabbit@yahoo.com</div>
+            <div class="col-md-2 col-sm-3 hidden-xs-down">Pending Documents</div>
+            <div class="col-md-1 col-sm-2 col-xs-6 width20"><a title="update info" href="UsersInfo.html" class="alert-link"><span class="hidden-xs-down">Edit</span><span  class="hidden-sm-up"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></a></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 col-sm-3 hidden-sm-down hidden-xs-down">4</div>
+            <div class="col-md-3 col-xs-6 col-sm-4 width80">Ms. Jessy Thomas</div>
+            <div class="col-md-2 col-sm-3 hidden-xs-down text-align-center">SC00079</div>
+            <div class="col-md-3 hidden-sm-down hidden-xs-down">jessythomas@rediff.com</div>
+            <div class="col-md-2 col-sm-3 hidden-xs-down">Expired</div>
+            <div class="col-md-1 col-sm-2 col-xs-6 width20"><a title="update info" href="UsersInfo.html" class="alert-link"><span class="hidden-xs-down">Edit</span><span  class="hidden-sm-up"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></a></div>
+        </div>
+        <div class="row">
+            <div  class="col-md-1 col-sm-3 hidden-sm-down hidden-xs-down">5</div>
+            <div class="col-md-3 col-xs-6 col-sm-4 width80">Mrs. Julie Katherine</div>
+            <div class="col-md-2 col-sm-3 hidden-xs-down text-align-center">SC00045</div>
+            <div class="col-md-3 hidden-sm-down hidden-xs-down">juliekatherine@redsy.com</div>
+            <div class="col-md-2 col-sm-3 hidden-xs-down">In Active</div>
+            <div class="col-md-1 col-sm-2 col-xs-6 width20"><a title="update info" href="UsersInfo.html" class="alert-link"><span class="hidden-xs-down">Edit</span><span  class="hidden-sm-up"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></a></div>
+        </div>
+        <div class="row">
+                <div class="col-md-1 col-sm-3 hidden-sm-down hidden-xs-down">6</div>
+                <div class="col-md-3 col-xs-6 col-sm-4 width80">Mr. Sam Busby</div>
+                <div class="col-md-2 col-sm-3 hidden-xs-down text-align-center">SC00022</div>
+                <div class="col-md-3 hidden-sm-down hidden-xs-down">peterbusby@gmail.com</div>
+                <div class="col-md-2 col-sm-3 hidden-xs-down">Active</div>
+                <div class="col-md-1 col-sm-2 col-xs-6 width20"><a title="update info" href="UsersInfo.html" class="alert-link"><span class="hidden-xs-down">Edit</span><span  class="hidden-sm-up"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></a></div>
+            </div>
+            <div class="row">
+                <div class="col-md-1 col-sm-3 hidden-sm-down hidden-xs-down">7</div>
+                <div class="col-md-3 col-xs-6 col-sm-4 width80">Mr. Peter Sampson</div>
+                <div class="col-md-2 col-sm-3 hidden-xs-down text-align-center">SC00042</div>
+                <div class="col-md-3 hidden-sm-down hidden-xs-down">samsampson@outlook.com</div>
+                <div class="col-md-2 col-sm-3 hidden-xs-down">In Progress</div>
+                <div class="col-md-1 col-sm-2 col-xs-6 width20"><a title="update info" href="UsersInfo.html" class="alert-link"><span class="hidden-xs-down">Edit</span><span  class="hidden-sm-up"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></a></div>
+            </div>
+            <div class="row">
+                <div  class="col-md-1 col-sm-3 hidden-sm-down hidden-xs-down">8</div>
+                <div class="col-md-3 col-xs-6 col-sm-4 width80">Ms. Suzzie Rabbit</div>
+                <div class="col-md-2 col-sm-3 hidden-xs-down text-align-center">SC00058</div>
+                <div class="col-md-3 hidden-sm-down hidden-xs-down">jackrabbit@yahoo.com</div>
+                <div class="col-md-2 col-sm-3 hidden-xs-down">Pending Documents</div>
+                <div class="col-md-1 col-sm-2 col-xs-6 width20"><a title="update info" href="#" class="alert-link"><span class="hidden-xs-down">Edit</span><span  class="hidden-sm-up"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></a></div>
+            </div>
+            <div class="row">
+                <div class="col-md-1 col-sm-3 hidden-sm-down hidden-xs-down">9</div>
+                <div class="col-md-3 col-xs-6 col-sm-4 width80">Mr. John Thomas</div>
+                <div class="col-md-2 col-sm-3 hidden-xs-down text-align-center">SC00089</div>
+                <div class="col-md-3 hidden-sm-down hidden-xs-down">jessythomas@rediff.com</div>
+                <div class="col-md-2 col-sm-3 hidden-xs-down">Expired</div>
+                <div class="col-md-1 col-sm-2 col-xs-6 width20"><a title="update info" href="#" class="alert-link"><span class="hidden-xs-down">Edit</span><span  class="hidden-sm-up"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></a></div>
+            </div>
+            <div class="row">
+                <div  class="col-md-1 col-sm-3 hidden-sm-down hidden-xs-down">10</div>
+                <div class="col-md-3 col-xs-6 col-sm-4 width80">Mr. Robert Katherine</div>
+                <div class="col-md-2 col-sm-3 hidden-xs-down text-align-center">SC00034</div>
+                <div class="col-md-3 hidden-sm-down hidden-xs-down">juliekatherine@redsy.com</div>
+                <div class="col-md-2 col-sm-3 hidden-xs-down">In Active</div>
+                <div class="col-md-1 col-sm-2 col-xs-6 width20"><a title="update info" href="#" class="alert-link"><span class="hidden-xs-down">Edit</span><span  class="hidden-sm-up"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></a></div>
+            </div>
+            <ul class="p-3 pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+    </div>
+</div>
+</body>
+
+</html>

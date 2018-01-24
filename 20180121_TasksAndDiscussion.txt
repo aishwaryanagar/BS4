@@ -1,0 +1,26 @@
+Following is the list of pending tasks after our first demo/ discussion : 
+
+
+1) Make login page ready and fully responsive for standard screen sizes.
+--> Fix spacing, padding (as per our observation, issue of padding/spacing is with mid size screen with approx. resolution 627*1280) 
+--> Align label-input properly.Right align labels and center align buttons. Refer forms from the template of c
+
+
+2) Make user details form proper and presentable (ully responsive for standard screen sizes)
+
+3) Reduce classes in div based grid view. Make it sorted and zero configurble with defined classes of BS4. If not, note all the trial and error observations and list of possible and optimized options.
+--> keep both table based and div based grid on the single page so that we can compare and decide which is better option.
+
+
+Note :
+
+1) Keep noting the issues/ observations while working so that we can track about it and communicate it well within team.
+2) try to mention the reference links if worked on any issue/ learnt any new feature
+3) highlight a new feature of BS4 to make knowledge transfer easy
+4) try to demonstrate BS4 concepts as much as possible
+
+RnD Things :
+
+1) "well" class replacement in BS4
+2) col-* generic usage instead of md,sm,xs specification in BS4
+3) div based grid feasibility in BS4 (CRITICAL)
