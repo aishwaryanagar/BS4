@@ -1,40 +1,61 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-      <meta name="description" content="" />
-      <meta name="author" content="" />
-      <link rel="icon" href="/images/favicon.ico" />
-      <title>Login</title>
-      <link href="css/bootstrap.min.css" rel="stylesheet" />
-      <link href="css/font-awesome.min.css" rel="stylesheet" />
-      <link href="css/style.css" rel="stylesheet" />
-  </head>
-  <body>
-      <div class="contentdiv">
-    </div>
-      <div class="container-fluid pt-5 pb-5 bgcolor-smokewhite">
-      <div class="offset-md-1 offset-lg-1 offset-sm-1 text-center">
-      <form action="Users.html" class="form-inline">
-    <label class="mr-sm-2 mb-2 mt-2 hidden-xs-down" for="inlineFormEmail">Email</label>
-    <div class="input-group mb-2 mt-2 mr-sm-2 col-sm-3 px-0">  <!--m=margin; r,l,b,t=right,left,bottom,top respectively; p=padding; x= x-axis(left and right) -->
-      <span class="input-group-addon hidden-sm-up" title="Email" id="Span2"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
-      <input type="text" class="form-control" id="inlineFormEmail" placeholder="email" title="enter mail" autofocus />
-    </div>
-  
-    <label class="mr-sm-2 mb-2 mt-2 hidden-xs-down" for="inlineFormPassword">Password</label>
-     <div class="input-group mr-sm-2 mb-2 mt-2 col-sm-3 px-0">
-      <span class="input-group-addon hidden-sm-up" title="Password" id="inlineFormPassword"><i class="fa fa-unlock" aria-hidden="true"></i></span>
-      <input type="text" class="form-control" id="inlineFormPassword" placeholder="password" title="enter password">
-    </div>
-    <div class="mb-2 mt-2">
-     <!-- <a href="Users.html" class="form-control btn btn-md btn-primary">Login</a> -->
-     <input type="submit" class="form-control btn btn-md btn-primary" value="Login" title="click to login" />
-    </div>
-    
-  </form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="icon" href="/images/favicon.ico" />
+  <title>Login</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var screenWidth = $(window).width();
+      $('#lblScreenSize').html(screenWidth);
+    });
+  </script>
+</head>
+
+<body>
+  <div class="contentdiv">
   </div>
-      
-  </body>
-  </html>
+  <div class="container-fluid pt-5 pb-5 bgcolor-smokewhite">
+    <div class="offset-md-1 offset-lg-1 offset-sm-1 text-center">
+      <form action="Users.html" class="form-inline">
+        <label class="mr-sm-2 mb-2 mt-2 hidden-xs-down" for="inlineFormEmail">Email</label>
+        <div class="input-group mb-2 mt-2 mr-sm-2 col-sm-3 px-0">
+          <!--m=margin; r,l,b,t=right,left,bottom,top respectively; p=padding; x= x-axis(left and right) -->
+          <span class="input-group-addon hidden-sm-up" title="Email" id="Span2">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+          </span>
+          <input type="text" class="form-control" id="inlineFormEmail" placeholder="email" title="enter mail" autofocus />
+        </div>
+
+        <label class="mr-sm-2 mb-2 mt-2 hidden-xs-down" for="inlineFormPassword">Password</label>
+        <div class="input-group mr-sm-2 mb-2 mt-2 col-sm-3 px-0">
+          <span class="input-group-addon hidden-sm-up" title="Password" id="inlineFormPassword">
+            <i class="fa fa-unlock" aria-hidden="true"></i>
+          </span>
+          <input type="text" class="form-control" id="inlineFormPassword" placeholder="password" title="enter password">
+        </div>
+        <div class="mb-2 mt-2">
+          <!-- <a href="Users.html" class="form-control btn btn-md btn-primary">Login</a> -->
+          <input type="submit" class="form-control btn btn-md btn-primary" value="Login" title="click to login" />
+        </div>
+        <div style="position: fixed;bottom: 0;right: 0;font-weight: 800">
+          <span>Width : </span>
+          <span id="lblScreenSize"></span>
+        </div>
+      </form>
+    </div>
+
+</body>
+
+</html>
