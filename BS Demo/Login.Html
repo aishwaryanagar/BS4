@@ -11,10 +11,12 @@
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/font-awesome.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="validator-master/fv.css" type="text/css" />
 
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+  <script src="validator-master/multifield.js"></script>
+  <script src="validator-master/validator.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
       var screenWidth = $(window).width();
@@ -29,29 +31,32 @@
   <div class="container-fluid pt-5 pb-5 bgcolor-smokewhite">
     <div class="offset-md-2 offset-lg-2 offset-sm-1 text-center col-lg-10 col-md-10 col-sm-11">
       <form action="Users.html" class="form-inline">
-        <label class="mr-1 mb-2 mt-2 hidden-xs-down" for="inlineFormEmail">Email</label>
+        <label class="mr-lg-1 mr-md-1 mb-2 mt-2 hidden-xs-down" for="inlineFormEmail">Email</label>
         <div class="input-group mb-2 mt-2 mr-3 col-sm-3 px-0">
           <!--m=margin; r,l,b,t=right,left,bottom,top respectively; p=padding; x= x-axis(left and right) -->
           <span class="input-group-addon hidden-sm-up" title="Email" id="Span2">
             <i class="fa fa-user-circle" aria-hidden="true"></i>
           </span>
-          <input type="text" class="form-control" id="inlineFormEmail" placeholder="email" title="enter mail" autofocus />
+          <input type="email" data-validate-linked='email' required="required" class="form-control" id="inlineFormEmail" placeholder="email" title="enter mail" autofocus />
         </div>
 
-        <label class="mr-1 mb-2 mt-2 hidden-xs-down" for="inlineFormPassword">Password</label>
+        <label class="mr-lg-1 mr-md-1 mb-2 mt-2 hidden-xs-down" for="inlineFormPassword">Password</label>
         <div class="input-group mr-3 mb-2 mt-2 col-sm-3 px-0">
           <span class="input-group-addon hidden-sm-up" title="Password" id="inlineFormPassword">
             <i class="fa fa-unlock" aria-hidden="true"></i>
           </span>
-          <input type="text" class="form-control" id="inlineFormPassword" placeholder="password" title="enter password">
+          <input type="password" required='required' class="form-control" id="inlineFormPassword" placeholder="password" title="enter password">
         </div>
         <div class="mb-2 mt-2">
           <!-- <a href="Users.html" class="form-control btn btn-md btn-primary">Login</a> -->
           <input type="submit" class="form-control btn btn-md btn-primary" value="Login" title="click to login" />
         </div>
         <div style="position: fixed;bottom: 0;right: 0;font-weight: 800">
-          <span>Width : </span>
-          <span id="lblScreenSize"></span>
+          <div>Large:>= 1200px </div>
+          <div>Medium:>= 992px </div>
+          <div>Small:>= 768px </div>
+          <div>Extra Small:< 768px </div>
+          <div>Current width: <span id="lblScreenSize"></span>px</div>
         </div>
       </form>
     </div>
