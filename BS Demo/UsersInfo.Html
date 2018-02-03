@@ -21,9 +21,9 @@
             border-width: .2rem;
         }
 
-.flex-direction-row {
-    flex-direction: row !important;
-}
+        .flex-direction-row {
+            flex-direction: row !important;
+        }
         @media (max-width:575px){
             .margin-x-15px {
                 margin-left: 15px;
@@ -34,151 +34,187 @@
 </head>
 <body>
     <div class="container">
-    <div class="card">
-        <div class="card-header">Edit User Details <span class="pull-right"><a href="Users.html">Back to Users</a>&nbsp;&nbsp;<a href="Login.html">Log Out</a></span></div>
-        <div class="card-block">
-            <form class="form">
-                <div class="form-group row mb-0">
-                    <!-- <label for="firstname" class="col-form-label"> Name</label> -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 input-group mb-3">
-                            <div class="input-group-addon">Name</div>
-                            <input type="text" class="form-control" id="firstname" placeholder="Name"  required="required" autofocus/>
-                          </div>
-                    <!-- <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="card">
+            <div class="fixed-top container">
+                <div class="card">
+                    <div class="card-header">
+                        User Details
+                        <span class="pull-right">
+                            <a href="Users.html">Users</a>&nbsp;&nbsp;
+                            <a href="Login.html">Log Out</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-block" style="margin-top:50px;">
+                <form class="form">
+                    <div class="form-group row mb-0">
+                        <!-- <label for="firstname" class="col-form-label"> Name</label> -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 input-group mb-3">
+                            <div class="input-group-addon">
+                                <span class="hidden-xs-down" title="Name">Name</span>
+                                <span class="hidden-sm-up">
+                                    <i title="Name" class="fa fa-address-book" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" id="firstname" placeholder="Name" required="required" title="Name" autofocus/>
+                        </div>
+                        <!-- <div class="col-md-3 col-sm-4 col-xs-6">
                         <input class="form-control" type="text" id="firstname">
                     </div> -->
-                    <!-- <label for="phone" class="col-form-label">Phone </label> -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 input-group mb-3">
-                            <div class="input-group-addon"><span class="hidden-xs-down">Phone</span> <span class="hidden-sm-up"><i class="fa fa-mobile" aria-hidden="true"></i></span></div>
-                            <input class="form-control" type="tel" id="phone" placeholder="Phone" required="required">
-                          </div>
-                    <!-- <div class="col-md-3 col-sm-4 col-xs-6">
+                        <!-- <label for="phone" class="col-form-label">Phone </label> -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 input-group mb-3">
+                            <div class="input-group-addon">
+                                <span class="hidden-xs-down" title="phone number">Phone</span>
+                                <span class="hidden-sm-up">
+                                    <i class="fa fa-mobile" aria-hidden="true" title="phone number"></i>
+                                </span>
+                            </div>
+                            <input class="form-control" type="tel" id="phone" placeholder="Phone" required="required" title="phone number">
+                        </div>
+                        <!-- <div class="col-md-3 col-sm-4 col-xs-6">
                         <input class="form-control" type="tel" id="phone">
                     </div> -->
-                    <!-- <label for="email" class="col-form-label">Email </label> -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 input-group mb-3">
-                            <div class="input-group-addon"><span class="hidden-xs-down">Email</span><span class="hidden-sm-up"><i class="fa fa-envelope" aria-hidden="true"></i></span></div>
-                            <input class="form-control" type="email" id="email" placeholder="Email" required="required">
-                          </div>
-                    <!-- <div class="col-md-3 col-sm-4 col-xs-6">
+                        <!-- <label for="email" class="col-form-label">Email </label> -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 input-group mb-3">
+                            <div class="input-group-addon">
+                                <span class="hidden-xs-down" title="email">Email</span>
+                                <span class="hidden-sm-up">
+                                    <i class="fa fa-envelope" aria-hidden="true" title="email"></i>
+                                </span>
+                            </div>
+                            <input class="form-control" type="email" id="email" placeholder="Email" title="email" required="required">
+                        </div>
+                        <!-- <div class="col-md-3 col-sm-4 col-xs-6">
                         <input class="form-control" type="email" id="email">
                     </div> -->
-                    <!-- <label for="example-number-input" class="col-form-label">No of Applicants</label> -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 input-group mb-3">
-                            <div class="input-group-addon">Applicants</div>
+                        <!-- <label for="example-number-input" class="col-form-label">No of Applicants</label> -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 input-group mb-3">
+                            <div class="input-group-addon">
+                                <span class="hidden-xs-down" title="No of Applicants">Applicants</span>
+                                <span class="hidden-sm-up">
+                                    <i class="fa fa-users" aria-hidden="true" title="No of Applicants"></i>
+                                </span>
+                            </div>
                             <input class="form-control" type="number" id="example-number-input" placeholder="No of Applicants" required="required" max="15">
-                          </div>
-                    <!-- <div class="col-md-3 col-sm-4 col-xs-6">
+                        </div>
+                        <!-- <div class="col-md-3 col-sm-4 col-xs-6">
                         <input class="form-control" type="number" value="42" id="example-number-input">
                     </div> -->
-                    <!-- <label for="example-date-input" class="col-form-label">Business Start </label> -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 input-group mb-3">
-                            <div class="input-group-addon"> <span class="hidden-xs-down">Date</span> <span class="hidden-sm-up"><i class="fa fa-calendar" aria-hidden="true"></i></span></div>
-                            <input class="form-control flex-direction-row" type="date" id="example-date-input" title="Business Start Date" placeholder="Business Start Date" required="required">
-                          </div>
-                    <!-- <div class="col-md-3 col-sm-4 col-xs-6">
+                        <!-- <label for="example-date-input" class="col-form-label">Business Start </label> -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 input-group mb-3">
+                            <div class="input-group-addon">
+                                <span class="hidden-xs-down" title="Business Start Date">Date</span>
+                                <span class="hidden-sm-up">
+                                    <i class="fa fa-calendar" title="Business Start Date" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <input class="form-control flex-direction-row" type="date" id="example-date-input" title="Business Start Date" placeholder="Business Start Date"
+                                required="required">
+                        </div>
+                        <!-- <div class="col-md-3 col-sm-4 col-xs-6">
                         <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
                     </div> -->
-                    <!-- <label for="example-time-input" class="col-form-label">Contact time</label> -->
-                    <div class="col-md-4 col-sm-6 col-xs-12 input-group mb-3">
-                            <div class="input-group-addon">Time</div>
-                            <input class="form-control flex-direction-row" type="time" id="example-time-input" placeholder="Contact time">
-                          </div>
-                    <!-- <div class="col-md-3 col-sm-4 col-xs-6">
+                        <!-- <label for="example-time-input" class="col-form-label">Contact time</label> -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 input-group mb-3">
+                            <div class="input-group-addon">
+                                <span class="hidden-xs-down">Time</span>
+                                <span class="hidden-sm-up">
+                                    <i class="fa fa-clock-o" title="contact time" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <input class="form-control flex-direction-row" type="time" id="example-time-input" placeholder="Contact time" title="contact time">
+                        </div>
+                        <!-- <div class="col-md-3 col-sm-4 col-xs-6">
                         <input class="form-control" type="time" id="example-time-input">
                     </div> -->
-                </div>
-                <div class="form-group row">
-                    <!-- Radio group !-->
-                    <label class="col-md-3 col-sm-4 col-xs-12 col-form-label">How soon do you need it?</label>
-                    <div class="col-md-9 col-sm-8 col-xs-12">
-                        <label class="custom-control custom-radio">
-                            <input id="radio1" name="radio" type="radio" class="custom-control-input" required="required">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">Immediately</span>
-                        </label>
-                        <label class="custom-control custom-radio">
-                            <input id="radio2" name="radio" type="radio" class="custom-control-input">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">Within 30 days</span>
-                        </label>
-                        <label class="custom-control custom-radio">
-                            <input id="radio2" name="radio" type="radio" class="custom-control-input">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">Within 6 months</span>
-                        </label>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <!-- Checkbox Group !-->
-                    <label class="col-md-3 col-sm-4 col-xs-12 col-form-label">Purpose of Funds?</label>
-                    <div class="col-md-9 col-sm-8 col-xs-12">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">Inventory</span>
-                        </label>
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">Marketing</span>
-                        </label>
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">Bridge</span>
-                        </label>
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">Equipments</span>
-                        </label>
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">Material</span>
-                        </label>
+                    <div class="form-group row">
+                        <!-- Radio group !-->
+                        <label class="col-md-3 col-sm-4 col-xs-12 col-form-label">How soon do you need it?</label>
+                        <div class="col-md-9 col-sm-8 col-xs-12">
+                            <label class="custom-control custom-radio">
+                                <input id="radio1" name="radio" type="radio" class="custom-control-input" required="required">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Immediately</span>
+                            </label>
+                            <label class="custom-control custom-radio">
+                                <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Within 30 days</span>
+                            </label>
+                            <label class="custom-control custom-radio">
+                                <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Within 6 months</span>
+                            </label>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="exampleSelect1" class="col-md-1 col-sm-2 col-form-label">Age</label>
-                    <div class="col-md-2 col-sm-4 col-xs-6">
-                        <select class="form-control" required="required">
-                            <option selected>Choose...</option>
-                            <option>20-30</option>
-                            <option>30-45</option>
-                            <option>45-56</option>
-                            <option>57-70</option>
-                            <option>70-85</option>
-                        </select>
+                    <div class="form-group row">
+                        <!-- Checkbox Group !-->
+                        <label class="col-md-3 col-sm-4 col-xs-12 col-form-label">Purpose of Funds?</label>
+                        <div class="col-md-9 col-sm-8 col-xs-12">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Inventory</span>
+                            </label>
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Marketing</span>
+                            </label>
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Bridge</span>
+                            </label>
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Equipments</span>
+                            </label>
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Material</span>
+                            </label>
+                        </div>
                     </div>
-                    <label for="file" class="col-form-label col-sm-2 col-md-1">Docs</label>
-                    <div class="col-md-4 col-sm-4 col-xs-6">
-                        <input type="file" id="file" class="custom-file-input" aria-describedby="fileHelp">
-                        <span class="custom-file-control margin-x-15px"></span>
-                        <small id="fileHelp" class="form-text text-muted">Choose only image file.</small>
+                    <div class="form-group row">
+                        <label for="exampleSelect1" class="col-md-1 col-sm-2 col-form-label">Age</label>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <select class="form-control" required="required">
+                                <option selected>Choose...</option>
+                                <option>20-30</option>
+                                <option>30-45</option>
+                                <option>45-56</option>
+                                <option>57-70</option>
+                                <option>70-85</option>
+                            </select>
+                        </div>
+                        <label for="file" class="col-form-label col-sm-2 col-md-1">Docs</label>
+                        <div class="col-md-4 col-sm-4 col-xs-6">
+                            <input type="file" id="file" class="custom-file-input" aria-describedby="fileHelp">
+                            <span class="custom-file-control margin-x-15px"></span>
+                            <small id="fileHelp" class="form-text text-muted">Choose only image file.</small>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="comment" class="col-md-1 col-sm-2 col-xs-4 col-form-label"> Notes</label>
-                    <div class="col-md-10 col-sm-10 col-xs-8">
-                        <textarea class="form-control" rows="3" id="comment"></textarea>
+                    <div class="form-group row">
+                        <label for="comment" class="col-md-1 col-sm-2 col-xs-4 col-form-label"> Notes</label>
+                        <div class="col-md-10 col-sm-10 col-xs-8">
+                            <textarea class="form-control" rows="3" id="comment"></textarea>
+                        </div>
                     </div>
-                </div>
-                <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">I Agree to terms and conditions*</span>
-                </label>
-                <div class="row">
-                    <div class="col-md-2 col-sm-4 col-xs-12"></div>
-                    <div class="col-md-10 col-sm-8 col-xs-12">
-                        <button type="submit" class="btn btn-info">Save</button>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-4 col-xs-12"></div>
+                        <div class="col-md-10 col-sm-8 col-xs-12">
+                            <button type="submit" class="btn btn-info">Save</button>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 </body>
 </html>
